@@ -7,11 +7,11 @@ def login(request):
     }
 
 
-def login(request):
+def facebook(request):
 
     fb = None
     try:
-        fb = request.facebook2
+        fb = request.facebook
     except:
         pass
 
