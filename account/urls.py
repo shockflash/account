@@ -13,5 +13,5 @@ urlpatterns = patterns('',
     url(r'^fslogin/', 'account.views.login', name = 'auth_fslogin'),
     (r'^profiles/', include('profiles.urls')),
     (r'^social/', include(socialregistration.urls)),
-    (r'^', include('registration.urls')),
+    (r'^', include('registration.backends.default.urls')),
 )
